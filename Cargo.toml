@@ -58,6 +58,8 @@ members = [
     "testsuite/libra_fuzzer",
     "types",
     "vm_validator",
+    "watcher/watcher_proto",
+    "watcher/watcher_service",
 ]
 
 [profile.release]

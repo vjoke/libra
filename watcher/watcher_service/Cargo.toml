@@ -1,0 +1,18 @@
+[package]
+name = "watcher_service"
+version = "0.1.0"
+authors = ["ray <vjoke@foxmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+grpcio = "0.4.3"
+protobuf = "2.6"
+futures = "0.1.25"
+futures03 = { version = "=0.3.0-alpha.16", package = "futures-preview" }
+watcher_proto = { path = "../watcher_proto" }
+grpc_helpers = { path = "../../common/grpc_helpers" }
+failure = { package = "failure_ext", path = "../../common/failure_ext" }
+executable_helpers = { path = "../../common/executable_helpers"}
+logger = { path = "../../common/logger" }
